@@ -73,13 +73,15 @@ div {
 }
 
 .outer {
-    width: 100%;
-    padding-left: 150px;
+    width: 80%;
+    /* padding-left: 100px; */
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     color: white;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
      
 }
 
@@ -150,14 +152,21 @@ main {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .large-tile img {
-    width: 80%;
+    width: 85%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border-style: solid;
+    border-color: var(--secondary);
+    
+}
 
+.large-tile img:hover{
+box-shadow: 0px 0px 50px 6px var(--primary);
 }
 
 .small-tiles{
@@ -167,13 +176,15 @@ main {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 .small-tiles img{
    width: 200px;
-
 }
-
+.small-tiles section:hover{
+    box-shadow: 0px 0px 25px 6px var(--primary);
+}
 .small-tiles section{
     border-style: solid;
     border-color: var(--secondary);
@@ -183,8 +194,26 @@ main {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    height: 200px;
+    width: 100%;
+    border-top: solid ;
+    background-color: silver;
 }
+
+footer h3{
+    display: flex;
+
+    
+}
+
+
+footer div{
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: end;
+}
+
