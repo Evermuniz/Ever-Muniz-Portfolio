@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  font-size: 100%;
 }
 body {
   background-color: #000;
@@ -40,7 +41,9 @@ a {
   padding: 20px;
   background-color: transparent;
 }
-
+a:hover{
+    text-decoration: underline;
+}
 header ul li {
   list-style-type: none;
   display: inline-block;
@@ -52,11 +55,10 @@ span {
 }
 
 .image {
-  height: 300px;
+  height: 600px;
   width: 100%;
-  background-image: url(./Assets/img2.jpeg);
-  background-size: cover;
-  opacity: 0.4;
+  background-image: url(./Assets/headshot.png);
+  background-size:cover;
 }
 
 div {
@@ -77,6 +79,7 @@ div {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  font-size: 120%;
 }
 
 .box {
@@ -110,7 +113,7 @@ main {
 }
 .container h2::after {
   content: "";
-  width: 400px;
+  width: 200px;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
@@ -121,7 +124,7 @@ main {
 
 .container h2::before {
   content: "";
-  width: 400px;
+  width: 200px;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
@@ -136,6 +139,7 @@ main {
   margin-right: auto;
   z-index: 3;
   display: flex;
+  font-size: 150%;
 }
 
 .large-tile {
@@ -145,8 +149,8 @@ main {
   flex-wrap: wrap;
 }
 .large-tile img {
-  width: 85%;
-  display: block;
+  width: 60%;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -161,15 +165,17 @@ main {
 .small-tiles {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
+  width: 65%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+  justify-content: center;
 }
 
 .small-tiles img {
-  width: 200px;
+  width: 250px;
+
 }
 .small-tiles section:hover {
   box-shadow: 0px 0px 25px 6px var(--primary);
@@ -178,7 +184,8 @@ main {
   border-style: solid;
   border-color: var(--secondary);
   margin: 20px;
-  flex: 1 0 0;
+  flex: 0 0 0;
+  
 }
 
 footer {
