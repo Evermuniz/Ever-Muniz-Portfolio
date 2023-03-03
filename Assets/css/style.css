@@ -73,7 +73,7 @@ div {
 
 .outer {
   width: 80%;
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -82,11 +82,22 @@ div {
   font-size: 120%;
 }
 
-.box {
+@media screen and (min-width: 1100px)
+  {.box {
   width: 200px;
   height: 100px;
   align-items: center;
-}
+  margin-left: auto;
+}}
+
+@media screen and (max-width: 1099px)
+  {.box {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}}
 
 .content {
   height: 100px;
@@ -95,6 +106,8 @@ div {
   display: flex;
   padding-left: 20px;
   line-height: 1.5;
+  flex-wrap: wrap;
+  margin-right: auto;
 }
 
 .vertical-line {
@@ -102,9 +115,11 @@ div {
 }
 
 .container {
-  width: 100%;
   padding-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .container h2::after {
   content: "";
   width: 200px;
@@ -113,7 +128,6 @@ div {
   z-index: -1;
   top: 50%;
   right: 80px;
-  display: block;
 }
 
 .container h2::before {
@@ -139,14 +153,20 @@ div {
 .large-tile {
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1 0 0;
+  
 }
 .large-tile img {
-  width: 60%;
+  width: 50%;
   margin-top: 20px;
   border-style: solid;
   border-color: var(--secondary);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; 
+
 }
 
 .large-tile img:hover {
@@ -162,6 +182,7 @@ div {
   margin-right: auto;
   margin-bottom: 100px;
   justify-content: center;
+
 }
 
 .small-tiles img {
