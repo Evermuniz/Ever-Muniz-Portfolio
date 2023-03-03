@@ -10,7 +10,7 @@ body {
   background-color: var(--dark); 
   color: var(--light);
   position: absolute;
-  min-height: 100vh;
+
 }
 
 
@@ -81,7 +81,7 @@ span {
 
 /*sizing for headshot*/
 .headshot img {
-  height: 500px;
+  width: 100%;
   display: flex;
   flex: 1 0 0;
 }
@@ -195,6 +195,7 @@ div {
   display: flex;
   margin-left: auto;
   margin-right: auto; 
+  flex: 1 0 0;
 
 }
 
