@@ -9,8 +9,10 @@
 body {
   background-color: var(--dark); 
   color: var(--light);
-  position:absolute;
+  position: absolute;
+  min-height: 100vh;
 }
+
 
 /*defining colors to be used throughout the page*/
 :root {
@@ -51,10 +53,10 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
+/* nav {
   margin-left: auto;
 
-}
+} */
 
 /*list style for link in header*/
 header ul li {
@@ -80,6 +82,8 @@ span {
 /*sizing for headshot*/
 .headshot img {
   height: 500px;
+  display: flex;
+  flex: 1 0 0;
 }
 
 /*flex positioning for div sections*/
