@@ -12,7 +12,7 @@ Building this website from scratch helped solidify HTML and CSS concepts for me.
 [Click on this link to visit my portfolio](https://evermuniz.github.io/my-portfolio)
 
 
-![Screenshot](assets/images/app-screenshot.jpeg)
+![Screenshot](./Assets/images/app-screenshot.jpeg)
 
 
 
