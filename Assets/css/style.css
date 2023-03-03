@@ -40,7 +40,7 @@ header h1 {
 a {
   color: var(--light);
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   background-color: transparent;
 }
 
@@ -176,7 +176,7 @@ div {
 
 
 .large-tile img {
-  width: 50%;
+  width: 500px;
   margin-top: 20px;
   border-style: solid;
   border-color: var(--secondary);
@@ -230,6 +230,7 @@ footer {
   width: 100%;
   border-top: solid;
   background-color: #7c7c7c7c;
+  padding-bottom: 15px;
 }
 
 footer div {
