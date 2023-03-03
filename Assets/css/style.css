@@ -149,7 +149,7 @@ div {
 /*work text and surrounding lines positioning, lots of google and trial and error*/
 .container h2::after {
   content: "";
-  width: 200px;
+  width: 300%;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
@@ -159,7 +159,7 @@ div {
 
 .container h2::before {
   content: "";
-  width: 200px;
+  width: 300%;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
@@ -188,7 +188,7 @@ div {
 
 
 .large-tile img {
-  width: 500px;
+  width: 60%;
   margin-top: 20px;
   border-style: solid;
   border-color: var(--secondary);
@@ -208,7 +208,7 @@ div {
 .small-tiles {
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
+  width: 100%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
