@@ -10,8 +10,6 @@ body {
   background-color: var(--dark); 
   color: var(--light);
   position:absolute;
-  min-width: 550px;
-  
 }
 
 /*defining colors to be used throughout the page*/
