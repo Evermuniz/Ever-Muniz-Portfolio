@@ -115,11 +115,9 @@ div {
 
 @media screen and (max-width: 1099px)
   {.box {
-  /* width: 200px;*/
   height: 100px;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
   flex: 1 0 0;
 }}
 
