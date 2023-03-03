@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   font-size: 100%;
+  
 }
 
 /*Defining background and font color */
@@ -48,6 +49,11 @@ a {
 /*underline links when mouse hovers over them*/
 a:hover {
   text-decoration: underline;
+}
+
+nav {
+  margin-left: auto;
+
 }
 
 /*list style for link in header*/
@@ -240,4 +246,8 @@ footer div {
   flex-wrap: wrap;
   margin-left: 50px;
   justify-content: end;
+}
+
+main {
+  min-width: 550px;
 }
