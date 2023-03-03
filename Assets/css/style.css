@@ -53,6 +53,7 @@ a:hover {
 header ul li {
   list-style-type: none;
   display: inline-block;
+  margin-right: 30px;
 }
 
 /*styling for last name in header*/
