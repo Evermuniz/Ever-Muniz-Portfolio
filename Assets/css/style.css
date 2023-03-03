@@ -3,13 +3,14 @@
   margin: 0px;
   font-size: 100%;
 }
+
+/*Defining background and font color */
 body {
-  background-color: var(--dark);
-  display: flex;
-  flex-direction: column;
+  background-color: var(--dark); 
   color: var(--light);
 }
 
+/*defining colors to be used throughout the page*/
 :root {
   --primary: rgba(105, 49, 122, 48);
   --secondary: rgba(114, 86, 122, 48);
@@ -18,6 +19,7 @@ body {
   --light: #fff;
 }
 
+/*styling and positioning for header and header elements*/
 header {
   display: flex;
   justify-content: space-between;
@@ -34,6 +36,7 @@ header h1 {
   padding-bottom: 20px;
 }
 
+/*styling for links*/
 a {
   color: var(--light);
   text-decoration: none;
@@ -41,20 +44,24 @@ a {
   background-color: transparent;
 }
 
+/*underline links when mouse hovers over them*/
 a:hover {
   text-decoration: underline;
 }
 
+/*list style for link in header*/
 header ul li {
   list-style-type: none;
   display: inline-block;
 }
 
+/*styling for last name in header*/
 span {
   color: #7c7c7c7c;
   filter: brightness(200%);
 }
 
+/*positioning for headshot*/
 .headshot {
   padding-top: 30px;
   display: flex;
@@ -62,15 +69,18 @@ span {
   justify-content: center;
 }
 
+/*sizing for headshot*/
 .headshot img {
   height: 400px;
 }
 
+/*flex positioning for div sections*/
 div {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*container for about me section*/
 .outer {
   width: 80%;
   padding-top: 100px;
@@ -82,6 +92,7 @@ div {
   font-size: 120%;
 }
 
+/*about me section positioning depending on screen width*/
 @media screen and (min-width: 1100px)
   {.box {
   width: 200px;
@@ -99,6 +110,7 @@ div {
   margin-right: auto;
 }}
 
+/*positioning for text in about me*/
 .content {
   height: 100px;
   align-items: center;
@@ -110,16 +122,19 @@ div {
   margin-right: auto;
 }
 
+/*border for about me and footer sections*/
 .vertical-line {
   border-left: solid var(--secondary);
 }
 
+/*container for work section*/
 .container {
   padding-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/*work text and surrounding lines positioning, lots of google and trial and error*/
 .container h2::after {
   content: "";
   width: 200px;
@@ -150,14 +165,16 @@ div {
   font-size: 150%;
 }
 
+/*container for first work link with layout/size/flex/style*/
 .large-tile {
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   flex: 1 0 0;
-  
 }
+
+
 .large-tile img {
   width: 50%;
   margin-top: 20px;
@@ -169,10 +186,12 @@ div {
 
 }
 
+/*link to glow when hovered over*/
 .large-tile img:hover {
   box-shadow: 0px 0px 50px 6px var(--primary);
 }
 
+/*container for smaller links and defining layout/size/flex/style*/
 .small-tiles {
   display: flex;
   flex-wrap: wrap;
@@ -188,9 +207,13 @@ div {
 .small-tiles img {
   width: 250px;
 }
+
+/*links will glow when hovered over*/
 .small-tiles section:hover {
   box-shadow: 0px 0px 25px 6px var(--primary);
 }
+
+
 .small-tiles section {
   border-style: solid;
   border-color: var(--secondary);
@@ -198,6 +221,7 @@ div {
   flex: 0 0 0;
 }
 
+/*footer layout/flex/style*/
 footer {
   display: flex;
   flex-wrap: wrap;
