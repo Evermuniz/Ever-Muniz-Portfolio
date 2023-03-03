@@ -9,7 +9,9 @@
 body {
   background-color: var(--dark); 
   color: var(--light);
+  position:absolute;
   min-width: 550px;
+  
 }
 
 /*defining colors to be used throughout the page*/
@@ -79,7 +81,7 @@ span {
 
 /*sizing for headshot*/
 .headshot img {
-  height: 400px;
+  height: 500px;
 }
 
 /*flex positioning for div sections*/
@@ -246,8 +248,4 @@ footer div {
   flex-wrap: wrap;
   margin-left: 50px;
   justify-content: end;
-}
-
-main {
-  min-width: 550px;
 }
