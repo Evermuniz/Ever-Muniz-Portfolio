@@ -125,7 +125,7 @@ div {
 
 /*positioning for text in about me*/
 .content {
-  height: 120px;
+  height: 220px;
   align-items: center;
   position: relative;
   display: flex;
@@ -189,7 +189,7 @@ div {
 
 
 .large-tile img {
-  width: 60%;
+  width: 90%;
   margin-top: 20px;
   border-style: solid;
   border-color: var(--secondary);
@@ -219,7 +219,8 @@ div {
 }
 
 .small-tiles img {
-  width: 250px;
+  width: 200px;
+  flex: 1 1 0;
 }
 
 /*links will glow when hovered over*/
@@ -232,7 +233,7 @@ div {
   border-style: solid;
   border-color: var(--secondary);
   margin: 20px;
-  flex: 0 0 0;
+  flex: 0 1 0;
 }
 
 /*footer layout/flex/style*/
@@ -269,11 +270,4 @@ footer div {
     justify-content: center;
     align-items: center;
     height: 60px;
-
-}
-
-footer a {
-  margin-right: 10px;
-  margin-left: 10px;
-  
 }
