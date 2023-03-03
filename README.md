@@ -8,9 +8,11 @@ I built this portfolio for potential employers to learn about me, my work, and h
 Building this website from scratch helped solidify HTML and CSS concepts for me. Things such as flex box, pseudo-elements, and styling. 
 
 ## Usage
-[Click on this link to visit my portfolio]("https://evermuniz.github.io/my-portfolio")
 
-![alt text](assets/images/app-screenshot.jpeg)
+[Click on this link to visit my portfolio](https://evermuniz.github.io/my-portfolio)
+
+
+![Screenshot](assets/images/app-screenshot.jpeg)
 
 
 
