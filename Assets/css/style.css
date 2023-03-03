@@ -115,16 +115,17 @@ div {
 
 @media screen and (max-width: 1099px)
   {.box {
-  width: 200px;
+  /* width: 200px;*/
   height: 100px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  flex: 1 0 0;
 }}
 
 /*positioning for text in about me*/
 .content {
-  height: 100px;
+  height: 120px;
   align-items: center;
   position: relative;
   display: flex;
@@ -235,7 +236,8 @@ div {
 }
 
 /*footer layout/flex/style*/
-footer {
+@media screen and (min-width: 500px) {
+  footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -251,4 +253,27 @@ footer div {
   flex-wrap: wrap;
   margin-left: 50px;
   justify-content: end;
+}}
+
+  footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-top: solid;
+  background-color: #7c7c7c7c;
+}
+
+footer div {
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+}
+
+footer a {
+  margin-right: 10px;
+  margin-left: 10px;
+  
 }
