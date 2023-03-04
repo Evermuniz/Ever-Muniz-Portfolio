@@ -9,7 +9,7 @@ Building this website from scratch helped solidify HTML and CSS concepts for me.
 
 ## Usage
 
-[Click on this link to visit my portfolio](https://evermuniz.github.io/my-portfolio)
+[Click on this link to visit my portfolio](https://evermuniz.github.io/Ever-Muniz-Portfolio)
 
 
 ![Screenshot](./Assets/images/app-screenshot.jpeg)
