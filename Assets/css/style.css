@@ -167,7 +167,7 @@ Basically using border colors and adjusting the postion and style to get the des
 as well as reposnsiveness with different screen sizes*/
 .container h2::after {
   content: "";
-  width: 250%;
+  width: 200%;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
@@ -177,7 +177,7 @@ as well as reposnsiveness with different screen sizes*/
 
 .container h2::before {
   content: "";
-  width: 250%;
+  width: 200%;
   border-bottom: solid var(--secondary);
   position: absolute;
   z-index: -1;
