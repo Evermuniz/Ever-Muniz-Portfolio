@@ -61,6 +61,7 @@ a:hover {
 /*Displaying links in header inline instead of default block*/
 li {
   display: inline-block;
+  margin-left: 20px;
 
 }
 
