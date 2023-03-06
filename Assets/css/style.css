@@ -74,7 +74,7 @@ span {
 /*setting headshot width to be 60% of container width, allowing it to flex
  and defining position */
 .headshot img {
-  width: 60%;
+  width: 70%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -217,9 +217,9 @@ main img:hover {
   box-shadow: 0px 0px 25px 6px var(--primary);
 }
 
-/* for screens under 500px, setting layout and wrap so they stack on top
-instead of being in line, justifying items and having the same border
-and background propertie as above 500px*/
+/* setting row positioning, flex for div to stack
+when screen is too small,  setting border and background colors
+bottom padding for styling*/
   footer {
   display: flex;
   flex-wrap: wrap;
@@ -228,6 +228,7 @@ and background propertie as above 500px*/
   width: 100%;
   border-top: solid;
   background-color: #7c7c7c7c;
+  padding-bottom: 15px;
 }
 
 
@@ -247,10 +248,9 @@ adding padding to the bottom */
 }} */
 
 
-
+/* setting div positioning*/
 footer div {
   padding: 20px;
-  flex-wrap: wrap;
   margin-left: 50px;
   justify-content: end;
 }
