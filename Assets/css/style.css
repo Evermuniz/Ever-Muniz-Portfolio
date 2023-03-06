@@ -61,7 +61,6 @@ a:hover {
 /*Displaying links in header inline instead of default block*/
 li {
   display: inline-block;
-  margin-left: 20px;
 
 }
 
@@ -252,7 +251,7 @@ adding padding to the bottom */
 
 footer div {
   padding: 20px;
-  margin-right: 6px;
+  /* margin-right: 6px; */
   justify-content: end;
 }
 
