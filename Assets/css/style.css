@@ -81,8 +81,7 @@ span {
   padding-top: 30px;
 }
 
-/*setting flex wrap for several sections: 
-About me, work, and the footer*/
+/*setting flex wrap for all divs used throughout the page*/
 div {
   display: flex;
   flex-wrap: wrap;
@@ -181,18 +180,8 @@ as well as reposnsiveness with different screen sizes*/
   font-size: 150%;
 }
 
-/*container for first work link with layout/size/flex/style*/
-/* .large-tile {
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1 0 0;
-} */
-
-
-/* setting position for the first work tile to be larger than the rest, allowing responsiveness
-to different screens sizes and styling*/
+/* setting size for the first work tile to be larger than the rest, defining
+position, and adding a border*/
 .large-tile {
   width: 70%;
   margin-top: 20px;
@@ -201,43 +190,51 @@ to different screens sizes and styling*/
   display: flex;
   margin-left: auto;
   margin-right: auto; 
-  /* flex: 1 0 0; */
 }
 
-/*container for smaller links and defining layout/size/flex/style*/
+/*container for smaller links, defining position, size, layout,
+and flex for smaller tiles to wrap for different screen sizes*/
 .small-tiles {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
   justify-content: center;
-
 }
 
-/*setting size for smaller images under work section, allowing them to grow/shrink 
-depending on the size of the screen*/
+/*setting size for smaller images under work section, setting a border
+and margin surrounding images*/
 .small-tiles img {
   width: 200px;
-  flex: 1 1 0;
   border-style: solid;
   border-color: var(--secondary);
   margin: 25px;
 }
 
+
+/*setting a glow around images under main section when hovered over*/
 main img:hover {
   box-shadow: 0px 0px 25px 6px var(--primary);
 }
 
+/* for screens under 500px, setting layout and wrap so they stack on top
+instead of being in line, justifying items and having the same border
+and background propertie as above 500px*/
+  footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-top: solid;
+  background-color: #7c7c7c7c;
+}
 
-/* .small-tiles a {
-  margin: 25px;
-  flex: 0 1 0;
-} */
 
-/*footer layout/flex/style*/
-@media screen and (min-width: 500px) {
+/*Only for screens over 500px, 
+setting a top border and different background color, 
+adding padding to the bottom */
+/* @media screen and (min-width: 500px) {
   footer {
   display: flex;
   flex-wrap: wrap;
@@ -247,27 +244,16 @@ main img:hover {
   border-top: solid;
   background-color: #7c7c7c7c;
   padding-bottom: 15px;
-}
+}} */
+
+
 
 footer div {
   padding: 20px;
   flex-wrap: wrap;
   margin-left: 50px;
   justify-content: end;
-}}
-
-  footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  border-top: solid;
-  background-color: #7c7c7c7c;
 }
 
-footer div {
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-}
+
+
