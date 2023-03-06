@@ -5,12 +5,11 @@
   
 }
 
-/*Defining background and font color */
+/*Defining background, font family and font color */
 body {
   background-color: var(--dark); 
   color: var(--light);
-  position: absolute;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*defining colors to be used throughout the page*/
@@ -38,9 +37,19 @@ header {
 /* Margin and padding to position the h1 element, setting font family and size*/
 header h1 {
   margin-left: 30px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   padding-bottom: 20px;
+}
+
+/*left padding for nav container for flex positioning, otherwise it will hug 
+the left side of the screen*/
+nav {
+  padding-left: 25px;
+}
+
+/*Displaying links in header inline instead of default block*/
+li {
+  display: inline-block;
 }
 
 /*Setting the link color to white, also is a root color, removing the 
@@ -56,12 +65,6 @@ a {
 /*underline links when mouse hovers over them*/
 a:hover {
   text-decoration: underline;
-}
-
-/*Displaying links in header inline instead of default block*/
-li {
-  display: inline-block;
-
 }
 
 /*Changing color for last name in header
@@ -229,37 +232,14 @@ bottom padding for styling*/
   border-top: solid;
   background-color: #7c7c7c7c;
   padding-bottom: 15px;
-
 }
 
-
-/*Only for screens over 500px, 
-setting a top border and different background color, 
-adding padding to the bottom */
-/* @media screen and (min-width: 500px) {
-  footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  border-top: solid;
-  background-color: #7c7c7c7c;
-  padding-bottom: 15px;
-}} */
-
-
+/*justifying content in the footer and adding padding around items*/
 footer div {
   padding: 20px;
-  /* margin-right: 6px; */
   justify-content: end;
 }
 
-/* setting div positioning*/
-/* @media screen and (max-width: 499px) {footer div {
-  padding: 20px;
-  margin-left: 50px;
-}} */
 
 
 
