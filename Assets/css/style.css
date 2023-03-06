@@ -22,7 +22,10 @@ body {
   --light: #fff;
 }
 
-/*styling and positioning for header and header elements*/
+/*Making the container a flex container, spacing elements evenly and 
+centering elements. Making the background a gradient using root colors 
+and using padding to position the header
+*/
 header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +35,7 @@ header {
   padding: 40px 5% 40px 0;
 }
 
+/* Margin and padding to position the h1 element, setting font family and size*/
 header h1 {
   margin-left: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +43,9 @@ header h1 {
   padding-bottom: 20px;
 }
 
-/*styling for links*/
+/*Setting the link color to white, also is a root color, removing the 
+default underline, adding padding around the links, and removing the
+background so the background is visible*/
 a {
   color: var(--light);
   text-decoration: none;
@@ -52,48 +58,38 @@ a:hover {
   text-decoration: underline;
 }
 
-/* nav {
-  margin-left: auto;
-
-} */
-
-/*list style for link in header*/
-header ul li {
-  list-style-type: none;
+/*Displaying links in header inline instead of default block*/
+li {
   display: inline-block;
 
 }
 
-/*styling for last name in header*/
+/*Changing color for last name in header
+increasing brightness to contrast with the background*/
 span {
   color: #7c7c7c7c;
   filter: brightness(200%);
 }
 
-/*positioning for headshot*/
-.headshot {
-  padding-top: 30px;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-}
-
-/*sizing for headshot*/
+/*setting headshot width to be 60% of container width, allowing it to flex
+ and defining position */
 .headshot img {
-  width: 80%;
+  width: 60%;
   display: flex;
-  flex: 0 0 0;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
 }
 
-/*flex positioning for div sections*/
+/*setting flex wrap for several sections: 
+About me, work, and the footer*/
 div {
   display: flex;
   flex-wrap: wrap;
 }
 
-/*container for about me section*/
+/*container for about me section. Defining size,
+positioning, font size, and responsiveness*/
 .outer {
   width: 80%;
   padding-top: 100px;
@@ -105,7 +101,9 @@ div {
   font-size: 120%;
 }
 
-/*about me section positioning depending on screen width*/
+/*about me section positioning depending on screen width.
+If screen is at least 1100px then "About Me" text will
+float to the right*/
 @media screen and (min-width: 1100px)
   {.box {
   width: 200px;
@@ -114,6 +112,8 @@ div {
   margin-left: auto;
 }}
 
+/* If screen is 1099px or less then "About Me" 
+text will float to the left and center of the body text*/
 @media screen and (max-width: 1099px)
   {.box {
   height: 100px;
@@ -122,7 +122,8 @@ div {
   flex: 1 0 0;
 }}
 
-/*positioning for text in about me*/
+/*positioning and styling for text in about me.
+height is set to 220px for the left border */
 .content {
   height: 220px;
   align-items: center;
@@ -134,7 +135,8 @@ div {
   margin-right: auto;
 }
 
-/*border for about me and footer sections*/
+/*left border visual styling for About Me 
+and Contact Me sections*/
 .vertical-line {
   border-left: solid var(--secondary);
 }
@@ -146,7 +148,9 @@ div {
   flex-wrap: wrap;
 }
 
-/*work text and surrounding lines positioning, lots of google and trial and error*/
+/*"Work" text and surrounding lines positioning, lots of google and trial and error. 
+Basically using border colors and adjusting the postion and style to get the desired effect
+as well as reposnsiveness with different screen sizes*/
 .container h2::after {
   content: "";
   width: 250%;
@@ -178,37 +182,32 @@ div {
 }
 
 /*container for first work link with layout/size/flex/style*/
-.large-tile {
+/* .large-tile {
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   flex: 1 0 0;
-}
+} */
 
 
-.large-tile img {
-  width: 90%;
+/* setting position for the first work tile to be larger than the rest, allowing responsiveness
+to different screens sizes and styling*/
+.large-tile {
+  width: 70%;
   margin-top: 20px;
   border-style: solid;
   border-color: var(--secondary);
   display: flex;
   margin-left: auto;
   margin-right: auto; 
-  flex: 1 0 0;
-
-}
-
-/*link to glow when hovered over*/
-.large-tile img:hover {
-  box-shadow: 0px 0px 50px 6px var(--primary);
+  /* flex: 1 0 0; */
 }
 
 /*container for smaller links and defining layout/size/flex/style*/
 .small-tiles {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -217,23 +216,25 @@ div {
 
 }
 
+/*setting size for smaller images under work section, allowing them to grow/shrink 
+depending on the size of the screen*/
 .small-tiles img {
   width: 200px;
   flex: 1 1 0;
+  border-style: solid;
+  border-color: var(--secondary);
+  margin: 25px;
 }
 
-/*links will glow when hovered over*/
-.small-tiles section:hover {
+main img:hover {
   box-shadow: 0px 0px 25px 6px var(--primary);
 }
 
 
-.small-tiles section {
-  border-style: solid;
-  border-color: var(--secondary);
-  margin: 20px;
+/* .small-tiles a {
+  margin: 25px;
   flex: 0 1 0;
-}
+} */
 
 /*footer layout/flex/style*/
 @media screen and (min-width: 500px) {
