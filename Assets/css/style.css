@@ -229,6 +229,7 @@ bottom padding for styling*/
   border-top: solid;
   background-color: #7c7c7c7c;
   padding-bottom: 15px;
+
 }
 
 
@@ -248,12 +249,17 @@ adding padding to the bottom */
 }} */
 
 
-/* setting div positioning*/
 footer div {
   padding: 20px;
-  margin-left: 50px;
+  margin-right: 6px;
   justify-content: end;
 }
+
+/* setting div positioning*/
+/* @media screen and (max-width: 499px) {footer div {
+  padding: 20px;
+  margin-left: 50px;
+}} */
 
 
 
