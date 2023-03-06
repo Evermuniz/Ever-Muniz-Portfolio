@@ -1,3 +1,4 @@
+/*universal settings for page*/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,7 +6,7 @@
   
 }
 
-/*Defining background, font family and font color */
+/*Defining body background, font family and font color */
 body {
   background-color: var(--dark); 
   color: var(--light);
@@ -74,10 +75,10 @@ span {
   filter: brightness(200%);
 }
 
-/*setting headshot width to be 60% of container width, allowing it to flex
+/*setting headshot width to be 50% of container width, allowing it to flex
  and defining position */
-.headshot img {
-  width: 70%;
+.headshot {
+  width: 50%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -103,29 +104,16 @@ positioning, font size, and responsiveness*/
   font-size: 120%;
 }
 
-/*about me section positioning depending on screen width.
-If screen is at least 1100px then "About Me" text will
-float to the right*/
-/* @media screen and (min-width: 1100px)
-  {.box {
-  width: 200px;
-  height: 100px;
-  align-items: center;
-  margin-left: auto;
-  flex: 1 0 0;
-  display: flex;
-}} */
-
-/* If screen is 1099px or less then "About Me" 
-text will float to the left and center of the body text*/
+/*used in about me and footer sections, 
+defining size, justification, and flex*/
 .box {
   height: 100px;
   align-items: center;
-  margin-left: auto;
   flex: 1 0 0;
 }
 
-/*positioning and styling for text in about me.
+/*only for screens at least 700ox wide, text will float 
+to the right of "About me", positioning and styling for text,
 height is set to 220px for the left border */
 @media screen and (min-width: 700px) { .content {
   height: 220px;
@@ -138,6 +126,9 @@ height is set to 220px for the left border */
   flex: 1 0 0;
 }}
 
+/*only for screens less than 700px wide, text will float 
+below "About me", positioning and styling for text,
+height is set to 220px for the left border */
 @media screen and (max-width: 699px) { .content {
   height: 220px;
   align-items: center;
