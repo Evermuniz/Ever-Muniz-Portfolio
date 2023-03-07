@@ -78,7 +78,7 @@ span {
 /*setting headshot width to be 50% of container width, allowing it to flex
  and defining position */
 .headshot {
-  width: 50%;
+  max-width: 60%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -89,6 +89,7 @@ span {
 div {
   display: flex;
   flex-wrap: wrap;
+  /* position: relative; */
 }
 
 /*container for about me section. Defining size,
@@ -186,9 +187,15 @@ as well as reposnsiveness with different screen sizes*/
   font-size: 150%;
 }
 
-/* setting size for the first work tile to be larger than the rest, defining
-position, and adding a border*/
+/*flex positioning for elements in the large tile div*/
 .large-tile {
+  display: flex;
+  justify-content: center;
+}
+
+/* setting size for the first work tile image to be larger than the rest, defining
+position, and adding a border*/
+.large-tile img {
   width: 70%;
   margin-top: 20px;
   border-style: solid;
@@ -196,14 +203,24 @@ position, and adding a border*/
   display: flex;
   margin-left: auto;
   margin-right: auto; 
+  justify-content: center;
+}
+
+/*positioning for text in image link to prework study guide*/
+label {
+  background-color: var(--primary);
+  position: absolute;
+  margin-top: 50px;
+  font-size: 150%;
+
 }
 
 /*container for smaller links, defining position, size, layout,
 and flex for smaller tiles to wrap for different screen sizes*/
 .small-tiles {
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 100px;
   justify-content: center;
 }
