@@ -20,6 +20,7 @@ Building this website from scratch helped solidify HTML and CSS concepts for me.
 ## Credits
 
 Coming Soon and prework study guide images sourced from google
+
 reset.css sourced from coding bootcamp learning material
 
 ## License
