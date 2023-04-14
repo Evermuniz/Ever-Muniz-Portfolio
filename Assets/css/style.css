@@ -85,6 +85,15 @@ span {
   padding-top: 30px;
 }
 
+@media screen and (min-width: 700px) { .headshot {
+  max-width: 500px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}}
+
+
 /*setting flex wrap for all divs used throughout the page*/
 div {
   display: flex;
@@ -260,6 +269,12 @@ footer div {
   justify-content: end;
 }
 
+.small-labels {
+  display: flex;
+  padding-left: 50px;
+  padd: -150px;
+  
+}
 
 
 
