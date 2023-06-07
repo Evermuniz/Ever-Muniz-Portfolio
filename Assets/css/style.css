@@ -271,7 +271,7 @@ footer div {
 
 .small-labels {
   display: flex;
-  padding-left: 50px;
+  justify-content: center;
 }
 
 
